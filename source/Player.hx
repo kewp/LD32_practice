@@ -14,7 +14,7 @@ class Player extends FlxSprite
 	{
 		super(X,Y);
 
-		loadGraphic(AssetPaths.player__png,true,16,16);
+		loadGraphic("assets/images/player.png",true,16,16);
 
 		setFacingFlip(FlxObject.LEFT,false,false);
 		setFacingFlip(FlxObject.RIGHT,true,false);
