@@ -41,6 +41,8 @@ class TiledLoader
 
 	public function loadEntities(entityLoadCallback:String->Xml->Void, entityLayer:String):Void
 	{
-
+		for (group in _fast.nodes.objectgroup)
+			for (a in group.elements)
+				entityLoadCallback(a.att.type,a.x);
 	}
 }

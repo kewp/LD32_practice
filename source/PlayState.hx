@@ -23,8 +23,8 @@ class PlayState extends FlxState
 	 */
 	override public function create():Void
 	{
-		_map = new TiledLoader("assets/tiled/room001.tmx");
-		_mWalls = _map.loadTilemap("assets/images/tilesExtra.png",16,16,"walls"); // Tiled indexes differently
+		_map = new TiledLoader("assets/data/room-001.tmx");
+		_mWalls = _map.loadTilemap("assets/images/tiles_extra.png",16,16,"walls"); // Tiled indexes differently
 		_mWalls.setTileProperties(1,FlxObject.NONE);
 		_mWalls.setTileProperties(2,FlxObject.ANY);
 		add(_mWalls);

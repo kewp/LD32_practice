@@ -24,6 +24,9 @@ class Player extends FlxSprite
 		animation.add("d",[0,1,0,2],6,false);
 
 		drag.x = drag.y = 1600;
+
+		setSize(8,14);
+		offset.set(4,2);
 	}
 
 	override public function update()
